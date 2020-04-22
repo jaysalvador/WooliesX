@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import WooliesX
 import WooliesAPI
 
 class MockViewModel: ViewModelProtocol {

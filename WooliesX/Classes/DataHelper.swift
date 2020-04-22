@@ -9,11 +9,9 @@
 import Foundation
 import WooliesAPI
 
-typealias HelperCompletionClosure = ((Result<[DogImage], HttpError>) -> Void)
-
 class DataHelper {
 
-    class func getMockImages(completion: HelperCompletionClosure?) {
+    class func getMockImages(completion: HttpCompletionClosure<[DogImage]>?) {
 
         let dataPath = Bundle(for: DataHelper.self).path(forResource: "data", ofType: "json") ?? ""
         

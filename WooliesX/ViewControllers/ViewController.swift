@@ -32,7 +32,17 @@ enum ViewItem: Equatable {
 
 class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDelegate {
 
-    private var viewModel: ViewModelProtocol? = ViewModel()
+    private lazy var viewModel: ViewModelProtocol? = {
+        
+        if AppDelegate.shared?.isMockData == true {
+            
+            return MockViewModel()
+        }
+        else {
+        
+            return ViewModel()
+        }
+    }()
     
     private var refreshControl = UIRefreshControl()
     

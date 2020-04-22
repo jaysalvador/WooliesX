@@ -24,6 +24,11 @@ class ImageCell: UICollectionViewCell {
         
         let breed = image?.firstBreed
         
+        if let id = image?.id {
+        
+            self.setAccessibilityIdentifier(withId: id)
+        }
+        
         return self.prepare(name: breed?.name, lifeSpan: breed?.lifeSpan, imageUrl: image?.url)
     }
     
@@ -38,6 +43,17 @@ class ImageCell: UICollectionViewCell {
         self.setupCell()
         
         return self
+    }
+    
+    private func setAccessibilityIdentifier(withId id: String) {
+        
+        self.accessibilityIdentifier = "cell_\(id)"
+        
+        self.imageView?.accessibilityIdentifier = "image_\(id)"
+        
+        self.nameLabel?.accessibilityIdentifier = "name_\(id)"
+        
+        self.lifeSpanLabel?.accessibilityIdentifier = "lifeSpan_\(id)"
     }
 
     private func setupCell() {

@@ -44,7 +44,7 @@
                         <barButtonItem key="rightBarButtonItem" title="A...Z" id="aTt-Rk-iwn">
                             <color key="tintColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <action selector="sortButtonTouchUpInside:" destination="BYZ-38-t0r" id="bhk-h6-IFo"/>
+                                <action selector="sortButtonTouchUpInside" destination="BYZ-38-t0r" id="DXV-Qp-Gbd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

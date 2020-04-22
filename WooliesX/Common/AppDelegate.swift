@@ -11,8 +11,22 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    var isMockData: Bool = false
+    
+    class var shared: AppDelegate? {
+        
+        return UIApplication.shared.delegate as? AppDelegate
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let arguments = CommandLine.arguments
+        
+        if arguments.contains("-rootMock") {
+            
+            self.isMockData = true
+        }
         
         return true
     }

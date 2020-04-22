@@ -2,42 +2,76 @@
 //  WooliesXUITests.swift
 //  WooliesXUITests
 //
-//  Created by Jay Salvador on 22/4/20.
+//  Created by Jay Salvador on 23/4/20.
 //  Copyright © 2020 Jay Salvador. All rights reserved.
 //
 
 import XCTest
 
 class WooliesXUITests: XCTestCase {
+        
+    var app: XCUIApplication!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        
+        self.app = XCUIApplication()
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
+    
     func testExample() {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
-        app.launch()
+        
+        self.app.launchArguments.append(contentsOf: ["-rootMock"])
+        
+        self.app.launch()
+        
+        let firstItemId = "S14n1x9NQ"
+        
+        let lastItemId = "sqQJDtbpY"
+        
+        let firstCell = self.app.collectionViews.cells["cell_\(firstItemId)"]
+        
+        let firstLabel = self.app.staticTexts["name_\(firstItemId)"].label
+        
+        XCTAssertEqual(firstCell.exists, true, "American Foxhound cell must be first cell")
+        
+        XCTAssertEqual(firstLabel, "American Foxhound", "value must be American Foxhound")
+        
+        let button = self.app.buttons.element
+        
+        button.tap()
+        
+        let lastCell = self.app.collectionViews.cells["cell_\(lastItemId)"]
+        
+        var identifier: String? = ""
+        
+        // Swipe down until it is visible
+        while !lastCell.exists {
+            
+            let currentIdentifier = self.app.collectionViews.cells.allElementsBoundByIndex.last?.identifier
+            
+            if identifier != currentIdentifier {
 
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTOSSignpostMetric.applicationLaunch]) {
-                XCUIApplication().launch()
+                identifier = currentIdentifier
+                
+                self.app.swipeUp()
+            }
+            else {
+                
+                // end of swiping
+                
+                XCTAssert(false, "Unable to find Element \(lastItemId)")
+                
+                break
             }
         }
+        
+        //"American Bully"
+                
+        let lastLabel = self.app.staticTexts["name_\(lastItemId)"].label
+
+        XCTAssertEqual(lastLabel, "American Bully", "Invalid value (American Bully)")
     }
 }
