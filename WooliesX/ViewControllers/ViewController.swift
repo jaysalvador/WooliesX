@@ -244,3 +244,18 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
         self.updateSectionsAndItems()
     }
 }
+
+extension ViewController {
+    
+    class func make(withViewModel viewModel: ViewModelProtocol) -> ViewController? {
+        
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController {
+
+            vc.viewModel = viewModel
+            
+            return vc
+        }
+        
+        return nil
+    }
+}
