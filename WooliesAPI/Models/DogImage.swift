@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+public struct DogImage: Codable {
+    
+    public var id: String?
+    public var url: String?
+    public var width: Int?
+    public var height: Int?
+    public var breeds: [Breed]?
+}

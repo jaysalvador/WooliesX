@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import WooliesAPI
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let client = DogImageClient()
+        
+        client?.getImages { response in
+            
+            switch response {
+            case .success(let images):
+                
+                print(images.count)
+            case .failure:
+                
+                print("error")
+            }
+        }
     }
 
 }

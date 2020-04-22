@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+public struct Breed: Codable {
+    
+    public var id: Int?
+    public var name: String?
+    public var lifeSpan: String?
+    
+    enum CodingKeys: String, CodingKey {
+        
+        case id
+        case name
+        case lifeSpan
+    }
+}
