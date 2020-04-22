@@ -24,10 +24,21 @@ public struct Breed: Codable {
 
 extension Breed {
     
+    public static let greatestLifeSpan: Int = 999
+    
     public var minLifeSpan: Int? {
         
         let min = String(self.lifeSpan?.split(separator: " ").first ?? "0").trimmingCharacters(in: .whitespacesAndNewlines)
         
         return Int(min)
     }
+}
+
+extension Breed: Equatable {
+    
+    public static func == (lhs: Breed, rhs: Breed) -> Bool {
+        
+        return lhs.id == rhs.id
+    }
+    
 }

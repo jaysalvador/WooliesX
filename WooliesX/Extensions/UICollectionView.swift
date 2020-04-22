@@ -18,7 +18,7 @@ extension UICollectionView {
         
         let name = String(describing: cell)
         
-        self.register(cell, forCellWithReuseIdentifier: name)
+        self.register(UINib(nibName: name, bundle: nil), forCellWithReuseIdentifier: name)
     }
     
     // MARK: Convenience - Dequeueing

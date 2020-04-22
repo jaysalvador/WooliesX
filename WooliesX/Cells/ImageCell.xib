@@ -16,17 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="325" height="272"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zo-ce-L2D">
-                        <rect key="frame" x="20" y="20" width="285" height="224"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zo-ce-L2D">
+                        <rect key="frame" x="20" y="20" width="285" height="190"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-fV-B5J">
-                        <rect key="frame" x="20" y="252" width="285" height="0.0"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-fV-B5J">
+                        <rect key="frame" x="20" y="218" width="285" height="19.5"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6S-og-HBy">
-                        <rect key="frame" x="20" y="252" width="285" height="0.0"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6S-og-HBy">
+                        <rect key="frame" x="20" y="237.5" width="285" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -41,8 +41,8 @@
                 <constraint firstItem="S2v-fV-B5J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="WOu-Ds-yrR"/>
                 <constraint firstAttribute="trailing" secondItem="M6S-og-HBy" secondAttribute="trailing" constant="20" id="Wp8-vF-dK7"/>
                 <constraint firstItem="M6S-og-HBy" firstAttribute="top" secondItem="S2v-fV-B5J" secondAttribute="bottom" id="bo7-CP-VTf"/>
+                <constraint firstAttribute="bottom" secondItem="M6S-og-HBy" secondAttribute="bottom" constant="20" id="klO-an-Xp5"/>
                 <constraint firstItem="2zo-ce-L2D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="lLa-iu-kow"/>
-                <constraint firstAttribute="bottom" secondItem="M6S-og-HBy" secondAttribute="bottom" constant="20" id="rqh-uI-V5T"/>
                 <constraint firstItem="S2v-fV-B5J" firstAttribute="top" secondItem="2zo-ce-L2D" secondAttribute="bottom" constant="8" id="yWG-Tm-cN9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

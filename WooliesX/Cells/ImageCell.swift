@@ -29,13 +29,83 @@ class ImageCell: UICollectionViewCell {
     
     func prepare(name: String?, lifeSpan: String?, imageUrl: String?) -> UICollectionViewCell {
         
+        self.imageView?.setImage(imageUrl)
+        
         self.nameLabel?.text = name
         
         self.lifeSpanLabel?.text = lifeSpan
         
-        self.imageView?.setImage(imageUrl)
+        self.setupCell()
         
         return self
     }
 
+    private func setupCell() {
+        
+        if #available(iOS 13.0, *) {
+            
+            self.backgroundColor = .systemGray6
+            
+            self.borderColor = UIColor.systemGray.withAlphaComponent(0.5)
+        }
+        else {
+            
+            self.backgroundColor = .white
+            
+            self.borderColor = UIColor.lightGray.withAlphaComponent(0.5)
+        }
+        
+        self.cornerRadius = 10.0
+        
+        self.borderWidth = 1.0
+        
+        self.clipsToBounds = true
+    }
+    
+    class func size(givenWidth: CGFloat, image: DogImage?) -> CGSize {
+        
+        let margin: CGFloat = 20.0
+        
+        let bottomContentHeight: CGFloat = 20.0
+        
+        let maxWidth: CGFloat = givenWidth - (margin * 2)
+                
+        var height: CGFloat = 0.0
+        
+        if let imageWidth = image?.width, let imageHeight = image?.height {
+            
+            if imageWidth > imageHeight {
+
+                let scaledWidth = min(maxWidth, CGFloat(imageWidth))
+                
+                let scale = scaledWidth / CGFloat(imageWidth)
+                
+                height = CGFloat(imageHeight) * scale
+            }
+            else {
+
+                let scaledHeight = min(maxWidth, CGFloat(imageHeight))
+                                
+                height = CGFloat(scaledHeight)
+            }
+        }
+        else {
+            
+            height = 100
+        }
+        
+        height += bottomContentHeight
+        
+        if image?.firstBreed?.name != nil {
+            
+            height += 28
+        }
+        
+        if image?.firstBreed?.lifeSpan != nil {
+            
+            height += 15
+        }
+        
+        return CGSize(width: givenWidth, height: height)
+    }
 }

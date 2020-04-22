@@ -29,21 +29,9 @@ class JCollectionViewController<Section: Equatable, Item: Equatable>: UIViewCont
         return SectionedValues<Section, Item>(self.sectionsAndItems)
     }
     
-    // MARK: - Init
-    
-    required init?(coder aDecoder: NSCoder) {
-        
-        fatalError()
-    }
-    
-    init() {
-        
-        super.init(nibName: nil, bundle: nil)
-        
-    }
-    
     // MARK: - Outlets
     
+    @IBOutlet
     var collectionView: UICollectionView?
     
     // MARK: - View life cycle

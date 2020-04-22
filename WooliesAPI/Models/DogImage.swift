@@ -29,3 +29,11 @@ extension DogImage {
         return self.breeds?.sorted { ($0.minLifeSpan ?? 0) > ($1.minLifeSpan ?? 0) }.first
     }
 }
+
+extension DogImage: Equatable {
+    
+    public static func == (lhs: DogImage, rhs: DogImage) -> Bool {
+        
+        return lhs.id == rhs.id
+    }
+}

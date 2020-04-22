@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "ViewController.sectionsAndItems.getter:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewModel?.images">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString

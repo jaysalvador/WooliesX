@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4B87E937D3735E3BE287F021 /* Pods_WooliesX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC19D0BBE2ABA5B2B3E0E1B8 /* Pods_WooliesX.framework */; };
 		79F3909B7F843AE6DBAB0107 /* Pods_WooliesXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C69D605268267610F951 /* Pods_WooliesXUITests.framework */; };
+		B5A14BDE2450701700FE338F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4C824505FC700736CAF /* UIImageView.swift */; };
 		B5A4E4602450422B00736CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E45F2450422B00736CAF /* AppDelegate.swift */; };
 		B5A4E4622450422B00736CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4612450422B00736CAF /* SceneDelegate.swift */; };
 		B5A4E4642450422B00736CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4632450422B00736CAF /* ViewController.swift */; };
@@ -35,7 +36,6 @@
 		B5A4E4C324505F0100736CAF /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4C224505F0100736CAF /* ViewModel.swift */; };
 		B5A4E4C524505F5B00736CAF /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4C424505F5B00736CAF /* AbstractDiffCalculator.swift */; };
 		B5A4E4C724505F8100736CAF /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4C624505F8100736CAF /* UICollectionView.swift */; };
-		B5A4E4C924505FC700736CAF /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4C824505FC700736CAF /* UIImageView.swift */; };
 		B5A4E4CE2450605700736CAF /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4CC2450605700736CAF /* ImageCell.swift */; };
 		B5A4E4CF2450605700736CAF /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5A4E4CD2450605700736CAF /* ImageCell.xib */; };
 		C3C28A85CD9967BC64FD877A /* Pods_WooliesXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE6B0C46CDD5E6D22843D4F /* Pods_WooliesXTests.framework */; };
@@ -614,12 +614,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5A4E4BA24505AA100736CAF /* UIView.swift in Sources */,
-				B5A4E4C924505FC700736CAF /* UIImageView.swift in Sources */,
 				B5A4E4C024505EDB00736CAF /* JCollectionView.swift in Sources */,
 				B5A4E4C524505F5B00736CAF /* AbstractDiffCalculator.swift in Sources */,
 				B5A4E4642450422B00736CAF /* ViewController.swift in Sources */,
 				B5A4E4602450422B00736CAF /* AppDelegate.swift in Sources */,
 				B5A4E4C324505F0100736CAF /* ViewModel.swift in Sources */,
+				B5A14BDE2450701700FE338F /* UIImageView.swift in Sources */,
 				B5A4E4C724505F8100736CAF /* UICollectionView.swift in Sources */,
 				B5A4E4622450422B00736CAF /* SceneDelegate.swift in Sources */,
 				B5A4E4CE2450605700736CAF /* ImageCell.swift in Sources */,
