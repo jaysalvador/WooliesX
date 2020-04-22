@@ -17,6 +17,7 @@
 		B5A4E46C2450422C00736CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A4E46A2450422C00736CAF /* LaunchScreen.storyboard */; };
 		B5A4E4772450422C00736CAF /* WooliesXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4762450422C00736CAF /* WooliesXTests.swift */; };
 		B5A4E4822450422C00736CAF /* WooliesXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4812450422C00736CAF /* WooliesXUITests.swift */; };
+		B5A4E4972450442100736CAF /* WooliesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4962450442100736CAF /* WooliesAPI.swift */; };
 		C3C28A85CD9967BC64FD877A /* Pods_WooliesXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE6B0C46CDD5E6D22843D4F /* Pods_WooliesXTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,18 @@
 			remoteInfo = WooliesX;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5A4E4922450442100736CAF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		11BECCBE5D5497F553138C13 /* Pods-WooliesXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesXTests.debug.xcconfig"; path = "Target Support Files/Pods-WooliesXTests/Pods-WooliesXTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +71,8 @@
 		B5A4E47D2450422C00736CAF /* WooliesXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WooliesXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A4E4812450422C00736CAF /* WooliesXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WooliesXUITests.swift; sourceTree = "<group>"; };
 		B5A4E4832450422C00736CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5A4E4942450442100736CAF /* libWooliesAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWooliesAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A4E4962450442100736CAF /* WooliesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WooliesAPI.swift; sourceTree = "<group>"; };
 		C5FC86D907094FB379247FC1 /* Pods-WooliesX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesX.release.xcconfig"; path = "Target Support Files/Pods-WooliesX/Pods-WooliesX.release.xcconfig"; sourceTree = "<group>"; };
 		CC19D0BBE2ABA5B2B3E0E1B8 /* Pods_WooliesX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WooliesX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1756D07654E3CA0A1342747 /* Pods-WooliesX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesX.debug.xcconfig"; path = "Target Support Files/Pods-WooliesX/Pods-WooliesX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +103,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5A4E4912450442100736CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +129,7 @@
 		B5A4E4532450422B00736CAF = {
 			isa = PBXGroup;
 			children = (
+				B5A4E4952450442100736CAF /* WooliesAPI */,
 				B5A4E45E2450422B00736CAF /* WooliesX */,
 				B5A4E4752450422C00736CAF /* WooliesXTests */,
 				B5A4E4802450422C00736CAF /* WooliesXUITests */,
@@ -122,6 +145,7 @@
 				B5A4E45C2450422B00736CAF /* WooliesX.app */,
 				B5A4E4722450422C00736CAF /* WooliesXTests.xctest */,
 				B5A4E47D2450422C00736CAF /* WooliesXUITests.xctest */,
+				B5A4E4942450442100736CAF /* libWooliesAPI.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +180,14 @@
 				B5A4E4832450422C00736CAF /* Info.plist */,
 			);
 			path = WooliesXUITests;
+			sourceTree = "<group>";
+		};
+		B5A4E4952450442100736CAF /* WooliesAPI */ = {
+			isa = PBXGroup;
+			children = (
+				B5A4E4962450442100736CAF /* WooliesAPI.swift */,
+			);
+			path = WooliesAPI;
 			sourceTree = "<group>";
 		};
 		C13E2A62CB0544652D00CB3A /* Frameworks */ = {
@@ -229,6 +261,24 @@
 			productReference = B5A4E47D2450422C00736CAF /* WooliesXUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B5A4E4932450442100736CAF /* WooliesAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5A4E4982450442100736CAF /* Build configuration list for PBXNativeTarget "WooliesAPI" */;
+			buildPhases = (
+				B5A4E4902450442100736CAF /* Sources */,
+				B5A4E4912450442100736CAF /* Frameworks */,
+				B5A4E4922450442100736CAF /* CopyFiles */,
+				B5A4E49B2450442600736CAF /* Run Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WooliesAPI;
+			productName = WooliesAPI;
+			productReference = B5A4E4942450442100736CAF /* libWooliesAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -250,6 +300,9 @@
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = B5A4E45B2450422B00736CAF;
 					};
+					B5A4E4932450442100736CAF = {
+						CreatedOnToolsVersion = 11.3;
+					};
 				};
 			};
 			buildConfigurationList = B5A4E4572450422B00736CAF /* Build configuration list for PBXProject "WooliesX" */;
@@ -268,6 +321,7 @@
 				B5A4E45B2450422B00736CAF /* WooliesX */,
 				B5A4E4712450422C00736CAF /* WooliesXTests */,
 				B5A4E47C2450422C00736CAF /* WooliesXUITests */,
+				B5A4E4932450442100736CAF /* WooliesAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -401,6 +455,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
+		B5A4E49B2450442600736CAF /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/Pods/SwiftLint/swiftlint\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -427,6 +499,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5A4E4822450422C00736CAF /* WooliesXUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5A4E4902450442100736CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A4E4972450442100736CAF /* WooliesAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +785,32 @@
 			};
 			name = Release;
 		};
+		B5A4E4992450442100736CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4LQQG9QN4;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5A4E49A2450442100736CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L4LQQG9QN4;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -740,6 +846,15 @@
 			buildConfigurations = (
 				B5A4E48D2450422C00736CAF /* Debug */,
 				B5A4E48E2450422C00736CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5A4E4982450442100736CAF /* Build configuration list for PBXNativeTarget "WooliesAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5A4E4992450442100736CAF /* Debug */,
+				B5A4E49A2450442100736CAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
