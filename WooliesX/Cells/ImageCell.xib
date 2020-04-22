@@ -19,14 +19,14 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2zo-ce-L2D">
                         <rect key="frame" x="20" y="20" width="285" height="190"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-fV-B5J">
-                        <rect key="frame" x="20" y="218" width="285" height="19.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2v-fV-B5J">
+                        <rect key="frame" x="141.5" y="218" width="42" height="19.5"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M6S-og-HBy">
-                        <rect key="frame" x="20" y="237.5" width="285" height="14.5"/>
+                        <rect key="frame" x="147" y="237.5" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,14 +34,12 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="S2v-fV-B5J" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="6Im-NY-S76"/>
                 <constraint firstAttribute="trailing" secondItem="2zo-ce-L2D" secondAttribute="trailing" constant="20" id="Dvx-bN-kMF"/>
-                <constraint firstItem="M6S-og-HBy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Q9R-Tf-30N"/>
                 <constraint firstItem="2zo-ce-L2D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Sy2-5G-6lK"/>
-                <constraint firstAttribute="trailing" secondItem="S2v-fV-B5J" secondAttribute="trailing" constant="20" id="To9-eD-9lb"/>
-                <constraint firstItem="S2v-fV-B5J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="WOu-Ds-yrR"/>
-                <constraint firstAttribute="trailing" secondItem="M6S-og-HBy" secondAttribute="trailing" constant="20" id="Wp8-vF-dK7"/>
+                <constraint firstItem="M6S-og-HBy" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="VrI-WA-qKu"/>
+                <constraint firstAttribute="bottom" secondItem="M6S-og-HBy" secondAttribute="bottom" constant="20" id="bTK-Yp-bqo"/>
                 <constraint firstItem="M6S-og-HBy" firstAttribute="top" secondItem="S2v-fV-B5J" secondAttribute="bottom" id="bo7-CP-VTf"/>
-                <constraint firstAttribute="bottom" secondItem="M6S-og-HBy" secondAttribute="bottom" constant="20" id="klO-an-Xp5"/>
                 <constraint firstItem="2zo-ce-L2D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="lLa-iu-kow"/>
                 <constraint firstItem="S2v-fV-B5J" firstAttribute="top" secondItem="2zo-ce-L2D" secondAttribute="bottom" constant="8" id="yWG-Tm-cN9"/>
             </constraints>

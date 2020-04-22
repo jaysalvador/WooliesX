@@ -21,6 +21,30 @@ public enum HttpError: Error {
 
 extension HttpError: LocalizedError {
     
+    public var title: String {
+         
+        switch self {
+        case .network:
+            
+            return "Network Error"
+        case .noData:
+            
+            return "Data Error"
+        case .decoding:
+            
+            return "Decoding Error"
+        case .server:
+            
+            return "Server Error"
+        case .nilRequest:
+            
+            return "Nil Request Error"
+        case .unknown:
+            
+            return "Unknown Error"
+        }
+    }
+    
     /// Returns a string representation of the error
     public var errorDescription: String? {
         
