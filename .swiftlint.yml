@@ -1,0 +1,35 @@
+disabled_rules:
+- trailing_whitespace
+- line_length
+- syntactic_sugar
+- identifier_name
+- statement_position
+- function_parameter_count
+- type_name
+- todo
+- nesting
+- file_length
+- type_body_length
+- large_tuple
+- fallthrough
+- cyclomatic_complexity
+- function_body_length
+- private_over_fileprivate
+- no_fallthrough_only
+- redundant_optional_initialization
+- for_where
+
+excluded:
+- Pods
+
+opt_in_rules:
+- closure_end_indentation
+- conditional_returns_on_newline
+- explicit_init
+- first_where
+- operator_usage_whitespace
+- vertical_parameter_alignment_on_call
+- switch_case_on_newline
+- closure_spacing
+- discouraged_direct_init
+- nimble_operator
