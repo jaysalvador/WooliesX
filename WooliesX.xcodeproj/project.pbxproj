@@ -10,6 +10,7 @@
 		4B87E937D3735E3BE287F021 /* Pods_WooliesX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC19D0BBE2ABA5B2B3E0E1B8 /* Pods_WooliesX.framework */; };
 		79F3909B7F843AE6DBAB0107 /* Pods_WooliesXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C69D605268267610F951 /* Pods_WooliesXUITests.framework */; };
 		B5A14BDE2450701700FE338F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4C824505FC700736CAF /* UIImageView.swift */; };
+		B5A14BE424508CA300FE338F /* MockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A14BE324508CA300FE338F /* MockViewModel.swift */; };
 		B5A4E4602450422B00736CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E45F2450422B00736CAF /* AppDelegate.swift */; };
 		B5A4E4622450422B00736CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4612450422B00736CAF /* SceneDelegate.swift */; };
 		B5A4E4642450422B00736CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4632450422B00736CAF /* ViewController.swift */; };
@@ -77,6 +78,7 @@
 		83AC571A4A3A115F43A73BD4 /* Pods-WooliesXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesXUITests.debug.xcconfig"; path = "Target Support Files/Pods-WooliesXUITests/Pods-WooliesXUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9D2FCF26DA0EBABD0DB2968E /* Pods-WooliesXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesXTests.release.xcconfig"; path = "Target Support Files/Pods-WooliesXTests/Pods-WooliesXTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5E1C69D605268267610F951 /* Pods_WooliesXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WooliesXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A14BE324508CA300FE338F /* MockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewModel.swift; sourceTree = "<group>"; };
 		B5A4E45C2450422B00736CAF /* WooliesX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooliesX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A4E45F2450422B00736CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A4E4612450422B00736CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 			children = (
 				B5A4E4B624504EDC00736CAF /* data.json */,
 				B5A4E4B424504ED400736CAF /* DataHelper.swift */,
+				B5A14BE324508CA300FE338F /* MockViewModel.swift */,
 				B5A4E4762450422C00736CAF /* WooliesXTests.swift */,
 				B5A4E4782450422C00736CAF /* Info.plist */,
 			);
@@ -632,6 +635,7 @@
 			files = (
 				B5A4E4772450422C00736CAF /* WooliesXTests.swift in Sources */,
 				B5A4E4B524504ED400736CAF /* DataHelper.swift in Sources */,
+				B5A14BE424508CA300FE338F /* MockViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

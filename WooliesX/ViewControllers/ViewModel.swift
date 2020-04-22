@@ -9,9 +9,9 @@
 import Foundation
 import WooliesAPI
 
-typealias ViewModelCallback = (() -> Void)
+public typealias ViewModelCallback = (() -> Void)
 
-protocol ViewModelProtocol {
+public protocol ViewModelProtocol {
     
     // MARK: - Data
     

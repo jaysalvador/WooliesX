@@ -9,7 +9,7 @@
 import Foundation
 import WooliesAPI
 
-typealias HelperCompletionClosure = ((Result<[DogImage], Error>) -> Void)
+typealias HelperCompletionClosure = ((Result<[DogImage], HttpError>) -> Void)
 
 class DataHelper {
 
@@ -28,7 +28,7 @@ class DataHelper {
         }
         catch {
 
-            completion?(.failure(error))
+            completion?(.failure(HttpError.decoding(error)))
         }
     }
 }

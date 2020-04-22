@@ -33,6 +33,32 @@ class WooliesXTests: XCTestCase {
             XCTAssertEqual(dog.firstBreed?.minLifeSpan, 12, "Minimum life span must be 12 years")
         }
     }
+    
+    func testViewController() {
+        
+        let viewModel = MockViewModel()
+        
+        let viewController = ViewController.make(withViewModel: viewModel)
+        
+        viewController?.loadViewIfNeeded()
+        
+        viewController?.sortButtonTouchUpInside()
+        
+        XCTAssertEqual(viewModel.isAscending, false, "Order Must be Descending")
+        
+        XCTAssertGreaterThan(viewController?.sectionsAndItems.count ?? 0, 0, "No media retrieved from the API")
+        
+        let viewItems = viewController?.sectionsAndItems.first?.1
+        
+        XCTAssertGreaterThan(viewItems?.count ?? 0, 0, "No media retrieved from the API")
+        
+        if case .item(let dogImage) = viewItems?.last {
+            
+            XCTAssertEqual(dogImage.firstBreed?.name, "American Bully", "Breed must be American Bully")
+            
+            XCTAssertEqual(dogImage.firstBreed?.minLifeSpan, 8, "Minimum life span must be 8 years")
+        }
+    }
 
     func getMockImages() -> [DogImage] {
         

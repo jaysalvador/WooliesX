@@ -235,7 +235,7 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
         self.viewModel?.getImages()
     }
     
-    @IBAction func sortButtonTouchUpInside(_ sender: Any) {
+    @IBAction func sortButtonTouchUpInside() {
         
         let isAscending = self.viewModel?.isAscending ?? true
         
