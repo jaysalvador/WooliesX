@@ -1,4 +1,7 @@
 PODS:
+  - collection-view-layouts/Core (0.2.2)
+  - collection-view-layouts/PinterestLayout (0.2.2):
+    - collection-view-layouts/Core
   - Dwifft (0.9)
   - Kingfisher (5.13.3):
     - Kingfisher/Core (= 5.13.3)
@@ -6,12 +9,14 @@ PODS:
   - SwiftLint (0.39.2)
 
 DEPENDENCIES:
+  - collection-view-layouts/PinterestLayout
   - Dwifft (from `https://github.com/jflinter/Dwifft.git`, commit `c5a9c62`)
   - Kingfisher
   - SwiftLint
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - collection-view-layouts
     - Kingfisher
     - SwiftLint
 
@@ -26,10 +31,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/jflinter/Dwifft.git
 
 SPEC CHECKSUMS:
+  collection-view-layouts: 474ec4cce601a26247737227a97fa6a4eb30213f
   Dwifft: 00dcec0f3c38cfb9c1331509851e81c84fc3949e
   Kingfisher: d2b3d6a7200c93b34de9afcdf25c8dd9282ec277
   SwiftLint: 22ccbbe3b8008684be5955693bab135e0ed6a447
 
-PODFILE CHECKSUM: d8f2cd9737b4302f9e79c120760acecb27feafd8
+PODFILE CHECKSUM: af9f899876311b62b0dfd62e03c9950023cb95a4
 
 COCOAPODS: 1.7.4

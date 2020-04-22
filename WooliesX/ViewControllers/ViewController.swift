@@ -8,6 +8,7 @@
 
 import UIKit
 import WooliesAPI
+import collection_view_layouts
 
 enum ViewSection: Equatable {
     
@@ -29,11 +30,35 @@ enum ViewItem: Equatable {
     }
 }
 
-class ViewController: JCollectionViewController<ViewSection, ViewItem> {
+class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDelegate {
 
     private var viewModel: ViewModelProtocol? = ViewModel()
     
     private var refreshControl = UIRefreshControl()
+    
+    private lazy var layout: PinterestLayout = {
+        
+        let layout = PinterestLayout()
+        
+        layout.delegate = self
+        
+        layout.cellsPadding = ItemsPadding(horizontal: 20, vertical: 20)
+        
+        layout.contentPadding = ItemsPadding(horizontal: 20, vertical: 20)
+        
+        layout.columnsCount = Int(self.columns)
+        
+        return layout
+    }()
+    
+    private var columns: CGFloat {
+        
+        if let width = self.view?.frame.width {
+            
+            return width >= 1024.0 ? 3 : (width > 414.0 ? 2 : 1)
+        }
+        return 1
+    }
     
     /// generates the items based on the data given by the `ViewModel` that will be rendered on the `CollectionView`
     override var sectionsAndItems: Array<SectionAndItems> {
@@ -82,7 +107,10 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem> {
         self.collectionView?.refreshControl = self.refreshControl
     }
 
+    /// setup UI properties and layout
     func setupViews() {
+        
+        self.collectionView?.setCollectionViewLayout(self.layout, animated: true)
         
         if #available(iOS 13.0, *) {
             
@@ -117,6 +145,13 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem> {
         self.viewModel?.getImages()
     }
     
+    override func viewWillLayoutSubviews() {
+        
+        self.layout.columnsCount = Int(self.columns)
+        
+        self.layout.invalidateLayout()
+    }
+    
     // MARK: - UICollectionViewDataSource & UICollectionViewDelegate
     
     /// Renders all the items
@@ -139,7 +174,27 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem> {
         
         if case .item(let image) = item {
             
-            return ImageCell.size(givenWidth: collectionView.frame.width, image: image)
+            return ImageCell.size(givenWidth: collectionView.frame.width, image: image, columns: self.columns)
+        }
+        
+        return .zero
+    }
+    
+    // MARK: - LayoutDelegate
+    
+    func cellSize(indexPath: IndexPath) -> CGSize {
+        
+        if let collectionView = self.collectionView,
+            let (section, item) = self.sectionAndItem(atIndexPath: indexPath),
+            let size = self.collectionView(
+                collectionView,
+                layout: self.layout,
+                sizeForSection: section,
+                item: item,
+                indexPath: indexPath
+            ) {
+            
+            return size
         }
         
         return .zero

@@ -9,6 +9,7 @@ target 'WooliesX' do
   pod 'SwiftLint'
   pod 'Dwifft', :git => 'https://github.com/jflinter/Dwifft.git', :commit => 'c5a9c62'
   pod 'Kingfisher'
+  pod 'collection-view-layouts/PinterestLayout'
 
   target 'WooliesXTests' do
     inherit! :search_paths

@@ -62,13 +62,13 @@ class ImageCell: UICollectionViewCell {
         self.clipsToBounds = true
     }
     
-    class func size(givenWidth: CGFloat, image: DogImage?) -> CGSize {
+    class func size(givenWidth: CGFloat, image: DogImage?, columns: CGFloat = 1) -> CGSize {
         
         let margin: CGFloat = 20.0
         
         let bottomContentHeight: CGFloat = 20.0
         
-        let maxWidth: CGFloat = givenWidth - (margin * 2)
+        let maxWidth: CGFloat = (givenWidth / columns) - (margin * 2)
                 
         var height: CGFloat = 0.0
         
@@ -106,6 +106,6 @@ class ImageCell: UICollectionViewCell {
             height += 15
         }
         
-        return CGSize(width: givenWidth, height: height)
+        return CGSize(width: (givenWidth / columns), height: height)
     }
 }
