@@ -18,6 +18,16 @@ public struct Breed: Codable {
         
         case id
         case name
-        case lifeSpan
+        case lifeSpan = "life_span"
+    }
+}
+
+extension Breed {
+    
+    public var minLifeSpan: Int? {
+        
+        let min = String(self.lifeSpan?.split(separator: " ").first ?? "0").trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        return Int(min)
     }
 }

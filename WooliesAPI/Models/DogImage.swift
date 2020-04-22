@@ -16,3 +16,16 @@ public struct DogImage: Codable {
     public var height: Int?
     public var breeds: [Breed]?
 }
+
+extension DogImage {
+    
+    public var firstBreed: Breed? {
+        
+        return self.breeds?.sorted { ($0.minLifeSpan ?? 0) < ($1.minLifeSpan ?? 0) }.first
+    }
+    
+    public var lastBreed: Breed? {
+        
+        return self.breeds?.sorted { ($0.minLifeSpan ?? 0) > ($1.minLifeSpan ?? 0) }.first
+    }
+}

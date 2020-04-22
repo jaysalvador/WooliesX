@@ -22,6 +22,7 @@ class ViewController: UIViewController {
             switch response {
             case .success(let images):
                 
+                print(images.first?.breeds?.first?.minLifeSpan)
                 print(images.count)
             case .failure:
                 

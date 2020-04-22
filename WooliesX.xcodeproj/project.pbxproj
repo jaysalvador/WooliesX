@@ -28,6 +28,8 @@
 		B5A4E4B024504C0A00736CAF /* DogImageClient.DogImageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4AF24504C0A00736CAF /* DogImageClient.DogImageRequest.swift */; };
 		B5A4E4B224504C4300736CAF /* UrlParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4B124504C4300736CAF /* UrlParameters.swift */; };
 		B5A4E4B324504C7800736CAF /* libWooliesAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A4E4942450442100736CAF /* libWooliesAPI.a */; };
+		B5A4E4B524504ED400736CAF /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4B424504ED400736CAF /* DataHelper.swift */; };
+		B5A4E4B724504EDC00736CAF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = B5A4E4B624504EDC00736CAF /* data.json */; };
 		C3C28A85CD9967BC64FD877A /* Pods_WooliesXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE6B0C46CDD5E6D22843D4F /* Pods_WooliesXTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +94,8 @@
 		B5A4E4AD24504AC900736CAF /* DogImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageClient.swift; sourceTree = "<group>"; };
 		B5A4E4AF24504C0A00736CAF /* DogImageClient.DogImageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogImageClient.DogImageRequest.swift; sourceTree = "<group>"; };
 		B5A4E4B124504C4300736CAF /* UrlParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlParameters.swift; sourceTree = "<group>"; };
+		B5A4E4B424504ED400736CAF /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		B5A4E4B624504EDC00736CAF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		C5FC86D907094FB379247FC1 /* Pods-WooliesX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesX.release.xcconfig"; path = "Target Support Files/Pods-WooliesX/Pods-WooliesX.release.xcconfig"; sourceTree = "<group>"; };
 		CC19D0BBE2ABA5B2B3E0E1B8 /* Pods_WooliesX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WooliesX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1756D07654E3CA0A1342747 /* Pods-WooliesX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesX.debug.xcconfig"; path = "Target Support Files/Pods-WooliesX/Pods-WooliesX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 		B5A4E4752450422C00736CAF /* WooliesXTests */ = {
 			isa = PBXGroup;
 			children = (
+				B5A4E4B624504EDC00736CAF /* data.json */,
+				B5A4E4B424504ED400736CAF /* DataHelper.swift */,
 				B5A4E4762450422C00736CAF /* WooliesXTests.swift */,
 				B5A4E4782450422C00736CAF /* Info.plist */,
 			);
@@ -394,6 +400,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A4E4B724504EDC00736CAF /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5A4E4772450422C00736CAF /* WooliesXTests.swift in Sources */,
+				B5A4E4B524504ED400736CAF /* DataHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
