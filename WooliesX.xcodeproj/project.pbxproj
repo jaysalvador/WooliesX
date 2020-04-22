@@ -14,7 +14,6 @@
 		B522AF6424509A79001BFA86 /* WooliesXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B522AF6324509A79001BFA86 /* WooliesXUITests.swift */; };
 		B5A14BDE2450701700FE338F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4C824505FC700736CAF /* UIImageView.swift */; };
 		B5A4E4602450422B00736CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E45F2450422B00736CAF /* AppDelegate.swift */; };
-		B5A4E4622450422B00736CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4612450422B00736CAF /* SceneDelegate.swift */; };
 		B5A4E4642450422B00736CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4632450422B00736CAF /* ViewController.swift */; };
 		B5A4E4672450422B00736CAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A4E4652450422B00736CAF /* Main.storyboard */; };
 		B5A4E4692450422C00736CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A4E4682450422C00736CAF /* Assets.xcassets */; };
@@ -84,7 +83,6 @@
 		B5A14BE324508CA300FE338F /* MockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockViewModel.swift; sourceTree = "<group>"; };
 		B5A4E45C2450422B00736CAF /* WooliesX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooliesX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A4E45F2450422B00736CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B5A4E4612450422B00736CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B5A4E4632450422B00736CAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B5A4E4662450422B00736CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5A4E4682450422C00736CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -290,7 +288,6 @@
 			isa = PBXGroup;
 			children = (
 				B5A4E45F2450422B00736CAF /* AppDelegate.swift */,
-				B5A4E4612450422B00736CAF /* SceneDelegate.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -611,7 +608,6 @@
 				B522AF57245093F4001BFA86 /* DataHelper.swift in Sources */,
 				B522AF58245093FC001BFA86 /* MockViewModel.swift in Sources */,
 				B5A4E4C724505F8100736CAF /* UICollectionView.swift in Sources */,
-				B5A4E4622450422B00736CAF /* SceneDelegate.swift in Sources */,
 				B5A4E4CE2450605700736CAF /* ImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,7 +760,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -818,7 +814,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -836,6 +832,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4LQQG9QN4;
 				INFOPLIST_FILE = WooliesX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -855,6 +852,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L4LQQG9QN4;
 				INFOPLIST_FILE = WooliesX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
