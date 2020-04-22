@@ -24,7 +24,7 @@ All API responses will be conforming to this closure, using the `Result` type:
 
 ## Client-side App
 
-The app architecture is built using the MVVM pattern and Protocol-oriented programming and Dependency Injection principles.
+The app architecture is built using the MVVM pattern and Protocol-oriented programming and Dependency Injection principles. `UICollectionView` is used in the app to have a more flexible `FlowLayout` into how the cells are rendered, as opposed to a linear, vertical render using `UITableView`
 
 ### Cocoapods Dependency
 
