@@ -39,6 +39,8 @@ extension AbstractDiffCalculator where Section: Equatable, Value: Equatable {
         return nil
     }
     
+    /// get the `(Section, Value)` tuple based on `IndexPath`
+    /// - Parameter indexPath: `IndexPath` to lookup
     func sectionAndValue(atIndexPath indexPath: IndexPath) -> (Section, Value) {
         
         return (self.value(forSection: indexPath.section), self.value(atIndexPath: indexPath))

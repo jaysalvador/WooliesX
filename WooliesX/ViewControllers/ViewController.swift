@@ -32,6 +32,7 @@ enum ViewItem: Equatable {
 
 class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDelegate {
 
+    /// load viewModel 
     private lazy var viewModel: ViewModelProtocol? = {
         
         if AppDelegate.shared?.isMockData == true {
@@ -45,7 +46,8 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
     }()
     
     private var refreshControl = UIRefreshControl()
-    
+
+    /// sets the Collection View Layout
     private lazy var layout: PinterestLayout = {
         
         let layout = PinterestLayout()
@@ -61,6 +63,7 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
         return layout
     }()
     
+    /// sets collection view columns based on screen width
     private var columns: CGFloat {
         
         if let width = self.view?.frame.width {
@@ -217,7 +220,7 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
         return .zero
     }
     
-    // MARK: - LayoutDelegate
+    // MARK: - LayoutDelegate for Pinterest
     
     func cellSize(indexPath: IndexPath) -> CGSize {
         
@@ -238,7 +241,7 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
     }
     
     // MARK: - Actions
-    
+
     @objc
     func onRefresh() {
         
@@ -257,6 +260,8 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
 
 extension ViewController {
     
+    /// Create a new instance of ViewController loaded from the Main storyboard
+    /// - Parameter viewModel: custom ViewModel
     class func make(withViewModel viewModel: ViewModelProtocol) -> ViewController? {
         
         if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController {

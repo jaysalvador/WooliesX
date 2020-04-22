@@ -78,6 +78,11 @@ class ImageCell: UICollectionViewCell {
         self.clipsToBounds = true
     }
     
+    /// Compute the cell size based on a fixed width and `DogImage` object
+    /// - Parameters:
+    ///   - givenWidth: width of the container
+    ///   - image: `DogImage` object
+    ///   - columns: compute into columns
     class func size(givenWidth: CGFloat, image: DogImage?, columns: CGFloat = 1) -> CGSize {
         
         let margin: CGFloat = 20.0
