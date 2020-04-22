@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B87E937D3735E3BE287F021 /* Pods_WooliesX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC19D0BBE2ABA5B2B3E0E1B8 /* Pods_WooliesX.framework */; };
+		79F3909B7F843AE6DBAB0107 /* Pods_WooliesXUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E1C69D605268267610F951 /* Pods_WooliesXUITests.framework */; };
 		B5A4E4602450422B00736CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E45F2450422B00736CAF /* AppDelegate.swift */; };
 		B5A4E4622450422B00736CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4612450422B00736CAF /* SceneDelegate.swift */; };
 		B5A4E4642450422B00736CAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4632450422B00736CAF /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		B5A4E46C2450422C00736CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A4E46A2450422C00736CAF /* LaunchScreen.storyboard */; };
 		B5A4E4772450422C00736CAF /* WooliesXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4762450422C00736CAF /* WooliesXTests.swift */; };
 		B5A4E4822450422C00736CAF /* WooliesXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A4E4812450422C00736CAF /* WooliesXUITests.swift */; };
+		C3C28A85CD9967BC64FD877A /* Pods_WooliesXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CE6B0C46CDD5E6D22843D4F /* Pods_WooliesXTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11BECCBE5D5497F553138C13 /* Pods-WooliesXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesXTests.debug.xcconfig"; path = "Target Support Files/Pods-WooliesXTests/Pods-WooliesXTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2CE6B0C46CDD5E6D22843D4F /* Pods_WooliesXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WooliesXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58E1EE4F26551FAA5DC3B4C6 /* Pods-WooliesXUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesXUITests.release.xcconfig"; path = "Target Support Files/Pods-WooliesXUITests/Pods-WooliesXUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83AC571A4A3A115F43A73BD4 /* Pods-WooliesXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesXUITests.debug.xcconfig"; path = "Target Support Files/Pods-WooliesXUITests/Pods-WooliesXUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2FCF26DA0EBABD0DB2968E /* Pods-WooliesXTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesXTests.release.xcconfig"; path = "Target Support Files/Pods-WooliesXTests/Pods-WooliesXTests.release.xcconfig"; sourceTree = "<group>"; };
+		A5E1C69D605268267610F951 /* Pods_WooliesXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WooliesXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A4E45C2450422B00736CAF /* WooliesX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WooliesX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A4E45F2450422B00736CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A4E4612450422B00736CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,9 @@
 		B5A4E47D2450422C00736CAF /* WooliesXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WooliesXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A4E4812450422C00736CAF /* WooliesXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WooliesXUITests.swift; sourceTree = "<group>"; };
 		B5A4E4832450422C00736CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FC86D907094FB379247FC1 /* Pods-WooliesX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesX.release.xcconfig"; path = "Target Support Files/Pods-WooliesX/Pods-WooliesX.release.xcconfig"; sourceTree = "<group>"; };
+		CC19D0BBE2ABA5B2B3E0E1B8 /* Pods_WooliesX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WooliesX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1756D07654E3CA0A1342747 /* Pods-WooliesX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WooliesX.debug.xcconfig"; path = "Target Support Files/Pods-WooliesX/Pods-WooliesX.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B87E937D3735E3BE287F021 /* Pods_WooliesX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C28A85CD9967BC64FD877A /* Pods_WooliesXTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79F3909B7F843AE6DBAB0107 /* Pods_WooliesXUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51472FD0B98EBDDA9EE5CD87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1756D07654E3CA0A1342747 /* Pods-WooliesX.debug.xcconfig */,
+				C5FC86D907094FB379247FC1 /* Pods-WooliesX.release.xcconfig */,
+				11BECCBE5D5497F553138C13 /* Pods-WooliesXTests.debug.xcconfig */,
+				9D2FCF26DA0EBABD0DB2968E /* Pods-WooliesXTests.release.xcconfig */,
+				83AC571A4A3A115F43A73BD4 /* Pods-WooliesXUITests.debug.xcconfig */,
+				58E1EE4F26551FAA5DC3B4C6 /* Pods-WooliesXUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B5A4E4532450422B00736CAF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				B5A4E4752450422C00736CAF /* WooliesXTests */,
 				B5A4E4802450422C00736CAF /* WooliesXUITests */,
 				B5A4E45D2450422B00736CAF /* Products */,
+				51472FD0B98EBDDA9EE5CD87 /* Pods */,
+				C13E2A62CB0544652D00CB3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +159,16 @@
 			path = WooliesXUITests;
 			sourceTree = "<group>";
 		};
+		C13E2A62CB0544652D00CB3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC19D0BBE2ABA5B2B3E0E1B8 /* Pods_WooliesX.framework */,
+				2CE6B0C46CDD5E6D22843D4F /* Pods_WooliesXTests.framework */,
+				A5E1C69D605268267610F951 /* Pods_WooliesXUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A4E4862450422C00736CAF /* Build configuration list for PBXNativeTarget "WooliesX" */;
 			buildPhases = (
+				5BB59BA8102DC67E0A847A8D /* [CP] Check Pods Manifest.lock */,
 				B5A4E4582450422B00736CAF /* Sources */,
 				B5A4E4592450422B00736CAF /* Frameworks */,
 				B5A4E45A2450422B00736CAF /* Resources */,
+				449A03188EF55ECE49189FDB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A4E4892450422C00736CAF /* Build configuration list for PBXNativeTarget "WooliesXTests" */;
 			buildPhases = (
+				2F0BFE5E7F2EEF36E6E7E303 /* [CP] Check Pods Manifest.lock */,
 				B5A4E46E2450422C00736CAF /* Sources */,
 				B5A4E46F2450422C00736CAF /* Frameworks */,
 				B5A4E4702450422C00736CAF /* Resources */,
@@ -170,6 +214,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5A4E48C2450422C00736CAF /* Build configuration list for PBXNativeTarget "WooliesXUITests" */;
 			buildPhases = (
+				6191982E842D2C1451386EB8 /* [CP] Check Pods Manifest.lock */,
 				B5A4E4792450422C00736CAF /* Sources */,
 				B5A4E47A2450422C00736CAF /* Frameworks */,
 				B5A4E47B2450422C00736CAF /* Resources */,
@@ -253,6 +298,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F0BFE5E7F2EEF36E6E7E303 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WooliesXTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		449A03188EF55ECE49189FDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WooliesX/Pods-WooliesX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WooliesX/Pods-WooliesX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WooliesX/Pods-WooliesX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BB59BA8102DC67E0A847A8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WooliesX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6191982E842D2C1451386EB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WooliesXUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5A4E4582450422B00736CAF /* Sources */ = {
@@ -432,6 +563,7 @@
 		};
 		B5A4E4872450422C00736CAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1756D07654E3CA0A1342747 /* Pods-WooliesX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +582,7 @@
 		};
 		B5A4E4882450422C00736CAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5FC86D907094FB379247FC1 /* Pods-WooliesX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +601,7 @@
 		};
 		B5A4E48A2450422C00736CAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11BECCBE5D5497F553138C13 /* Pods-WooliesXTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +624,7 @@
 		};
 		B5A4E48B2450422C00736CAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2FCF26DA0EBABD0DB2968E /* Pods-WooliesXTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +647,7 @@
 		};
 		B5A4E48D2450422C00736CAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83AC571A4A3A115F43A73BD4 /* Pods-WooliesXUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +668,7 @@
 		};
 		B5A4E48E2450422C00736CAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58E1EE4F26551FAA5DC3B4C6 /* Pods-WooliesXUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
