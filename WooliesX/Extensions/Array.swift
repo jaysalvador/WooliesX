@@ -27,9 +27,13 @@ extension Array where Element == DogImage {
             
             let secondName = $1.firstBreed?.name ?? "ZZZZ"
             
-            let firstImage = (firstMinLifeSpan, firstMaxLifeSpan, firstName)
+            let firstId = $0.firstBreed?.id ?? Int.max
             
-            let secondImage = (secondMinLifeSpan, secondMaxLifeSpan, secondName)
+            let secondId = $1.firstBreed?.id ?? Int.max
+            
+            let firstImage = (firstMinLifeSpan, firstMaxLifeSpan, firstName, firstId)
+            
+            let secondImage = (secondMinLifeSpan, secondMaxLifeSpan, secondName, secondId)
             
             if ascending {
                 

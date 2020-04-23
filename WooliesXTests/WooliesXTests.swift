@@ -36,6 +36,26 @@ class WooliesXTests: XCTestCase {
         }
     }
     
+    func testOrder() {
+        
+        let images = getMockImages().sorted(ascending: true)
+        
+        XCTAssertTrue(images.count > 0, "No media retrieved from the API")
+        
+        let firstImage = images[0]
+        
+        XCTAssertEqual(firstImage.firstBreed?.name, "Rottweiler", "Breed must be Rottweiler")
+        
+        XCTAssertEqual(firstImage.firstBreed?.minLifeSpan, 8, "Minimum life span must be 8 years")
+        
+        let secondImage = images[3]
+        
+        XCTAssertEqual(secondImage.firstBreed?.name, "American Foxhound", "Breed must be American Foxhound")
+        
+        XCTAssertEqual(secondImage.firstBreed?.maxLifeSpan, 15, "Maximum life span must be 15 years")
+        
+    }
+    
     func testViewController() {
         
         let viewModel = MockViewModel()
@@ -48,7 +68,7 @@ class WooliesXTests: XCTestCase {
         
         if case .item(let dogImage) = viewItems?.first {
             
-            XCTAssertEqual(dogImage.firstBreed?.name, "Rottweiler", "Breed must be American Bully")
+            XCTAssertEqual(dogImage.firstBreed?.name, "Rottweiler", "Breed must be Rottweiler")
             
             XCTAssertEqual(dogImage.firstBreed?.minLifeSpan, 8, "Minimum life span must be 8 years")
         }
@@ -65,7 +85,7 @@ class WooliesXTests: XCTestCase {
         
         if case .item(let dogImage) = viewItems?.last {
             
-            XCTAssertEqual(dogImage.firstBreed?.name, "Rottweiler", "Breed must be American Bully")
+            XCTAssertEqual(dogImage.firstBreed?.name, "Rottweiler", "Breed must be Rottweiler")
             
             XCTAssertEqual(dogImage.firstBreed?.minLifeSpan, 8, "Minimum life span must be 8 years")
         }
