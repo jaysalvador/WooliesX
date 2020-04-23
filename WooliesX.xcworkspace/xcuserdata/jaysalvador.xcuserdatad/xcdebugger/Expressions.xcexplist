@@ -3,18 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "ViewController.sectionsAndItems.getter:ViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "self.viewModel?.images">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in ViewController.viewDidLoad():ViewController.swift">
          <PersistentStrings>
             <PersistentString
                value = "images.filter { $0.breeds?.first?.minLifeSpan == nil }">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "WooliesXTests.testViewController():WooliesXTests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "viewController?.sectionsAndItems.first">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.sectionsAndItems.getter:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.viewModel?.images">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

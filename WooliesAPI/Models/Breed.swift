@@ -32,6 +32,18 @@ extension Breed {
         
         return Int(min)
     }
+    
+    public var maxLifeSpan: Int? {
+        
+        if let items = self.lifeSpan?.split(separator: " "), items.count > 2 {
+            
+            let max = String(self.lifeSpan?.split(separator: " ")[2] ?? "0").trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            return Int(max) ?? self.minLifeSpan
+        }
+        
+        return self.minLifeSpan
+    }
 }
 
 extension Breed: Equatable {

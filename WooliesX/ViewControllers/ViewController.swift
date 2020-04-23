@@ -80,11 +80,7 @@ class ViewController: JCollectionViewController<ViewSection, ViewItem>, LayoutDe
         
         let isAscending = self.viewModel?.isAscending ?? true
         
-        let images = self.viewModel?.images?.sorted {
-            
-            (($0.firstBreed?.minLifeSpan ?? Breed.greatestLifeSpan) < ($1.firstBreed?.minLifeSpan ?? Breed.greatestLifeSpan) && isAscending) ||
-            (($0.firstBreed?.minLifeSpan ?? Breed.greatestLifeSpan) > ($1.firstBreed?.minLifeSpan ?? Breed.greatestLifeSpan) && !isAscending)
-        }
+        let images = self.viewModel?.images?.sorted(ascending: isAscending)
         
         images?.forEach {
             

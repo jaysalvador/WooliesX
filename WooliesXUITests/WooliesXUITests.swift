@@ -27,28 +27,26 @@ class WooliesXUITests: XCTestCase {
         
         self.app.launch()
         
-        let firstItemId = "S14n1x9NQ"
-        
-        let lastItemId = "sqQJDtbpY"
+        let firstItemId = "r1xXEgcNX"
         
         let firstCell = self.app.collectionViews.cells["cell_\(firstItemId)"]
         
-        let firstLabel = self.app.staticTexts["name_\(firstItemId)"].label
+        let firstLabel = self.app.staticTexts["name_\(firstItemId)"].firstMatch.label
         
-        XCTAssertEqual(firstCell.exists, true, "American Foxhound cell must be first cell")
+        XCTAssertEqual(firstCell.exists, true, "Rottweiler cell must be first cell")
         
-        XCTAssertEqual(firstLabel, "American Foxhound", "value must be American Foxhound")
+        XCTAssertEqual(firstLabel, "Rottweiler", "value must be American Foxhound")
         
         let button = self.app.buttons.element
         
         button.tap()
         
-        let lastCell = self.app.collectionViews.cells["cell_\(lastItemId)"]
+        let lastCell = self.app.collectionViews.cells["cell_\(firstItemId)"]
         
         var identifier: String? = ""
         
         // Swipe down until it is visible
-        while !lastCell.exists {
+        while !self.isVisible(element: lastCell) {
             
             let currentIdentifier = self.app.collectionViews.cells.allElementsBoundByIndex.last?.identifier
             
@@ -62,7 +60,7 @@ class WooliesXUITests: XCTestCase {
                 
                 // end of swiping
                 
-                XCTAssert(false, "Unable to find Element \(lastItemId)")
+                XCTAssert(false, "Unable to find Element \(firstItemId)")
                 
                 break
             }
@@ -70,8 +68,18 @@ class WooliesXUITests: XCTestCase {
         
         //"American Bully"
                 
-        let lastLabel = self.app.staticTexts["name_\(lastItemId)"].label
+        let lastLabel = self.app.staticTexts["name_\(firstItemId)"].label
 
-        XCTAssertEqual(lastLabel, "American Bully", "Invalid value (American Bully)")
+        XCTAssertEqual(lastLabel, "Rottweiler", "Invalid value (American Bully)")
+    }
+
+    private func isVisible(element: XCUIElement) -> Bool {
+        
+        guard element.exists && !element.frame.isEmpty else {
+            
+            return false
+        }
+        
+        return XCUIApplication().windows.element(boundBy: 0).frame.contains(element.frame)
     }
 }

@@ -24,6 +24,8 @@ class WooliesXTests: XCTestCase {
         
         XCTAssertEqual(firstImage?.firstBreed?.minLifeSpan, 8, "Minimum life span must be 8 years")
         
+        XCTAssertEqual(firstImage?.firstBreed?.maxLifeSpan, 15, "Maximum life span must be 15 years")
+        
         let dogsAge12 = images.filter { $0.firstBreed?.minLifeSpan == 12 }
         
         XCTAssertEqual(dogsAge12.count, 7, "There must be 7 dogs with min age 12")
@@ -42,19 +44,28 @@ class WooliesXTests: XCTestCase {
         
         viewController?.loadViewIfNeeded()
         
+        var viewItems = viewController?.sectionsAndItems.first?.1
+        
+        if case .item(let dogImage) = viewItems?.first {
+            
+            XCTAssertEqual(dogImage.firstBreed?.name, "Rottweiler", "Breed must be American Bully")
+            
+            XCTAssertEqual(dogImage.firstBreed?.minLifeSpan, 8, "Minimum life span must be 8 years")
+        }
+        
         viewController?.sortButtonTouchUpInside()
         
         XCTAssertEqual(viewModel.isAscending, false, "Order Must be Descending")
         
         XCTAssertGreaterThan(viewController?.sectionsAndItems.count ?? 0, 0, "No media retrieved from the API")
         
-        let viewItems = viewController?.sectionsAndItems.first?.1
+        viewItems = viewController?.sectionsAndItems.first?.1
         
         XCTAssertGreaterThan(viewItems?.count ?? 0, 0, "No media retrieved from the API")
         
         if case .item(let dogImage) = viewItems?.last {
             
-            XCTAssertEqual(dogImage.firstBreed?.name, "American Bully", "Breed must be American Bully")
+            XCTAssertEqual(dogImage.firstBreed?.name, "Rottweiler", "Breed must be American Bully")
             
             XCTAssertEqual(dogImage.firstBreed?.minLifeSpan, 8, "Minimum life span must be 8 years")
         }
